@@ -93,7 +93,6 @@ void ForDelay(int latchPin,int dataPin,int clockPin,int numb[],int fnum,int snum
    fnum--;
    snum--;
  }
-  ledoff();
 }
 
 void lane1(int latchPin,int dataPin,int clockPin){
