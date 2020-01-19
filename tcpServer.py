@@ -22,12 +22,12 @@ while True:
        data = connection.recv(1024)
        print('received {!r}'.format(data))
        if data:
-            if data == "Ready\r\n":
-		connection.sendall(data)
+            if data == "ready\r\n":
+		connection.sendall("10:15")
 		print('sending data back to the client   10:15')
-	    elif data == "Busy\r\n":
+	    elif data == "busy\r\n":
 	   	print('controller busy')
-	    #connection.sendall(data)
+	    	#connection.sendall(data)
        else:
            print('no data from', client_address)
            break
